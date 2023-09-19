@@ -25,5 +25,17 @@ import requests
 requests.get('https://data.cityofnewyork.us/resource/uvks-tn5n.json')
 ```
 <img src="getterminal.png" alt="Alt text" title="testing get">
-You will receive a response of  response code 200.This shows that the api supports GET requests.
+* You will receive a response of  response code 200.This shows that the api supports GET requests.
+
+### Testing POST requests.
+* Open the shell `python3`
+* Enter the following in the shell:
+```python
+import requests
+```
+```python
+requests.post('https://data.cityofnewyork.us/resource/uvks-tn5n.json')
+```
+<img src="postterminal.png" alt="Alt text" title="testing post">
+* You will receive a response of  response code 403.This shows that the api does not support POST requests.
 
